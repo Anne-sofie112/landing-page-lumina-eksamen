@@ -80,7 +80,7 @@ body {
 
 .nav-hover:hover {
   background-color: var(--logo-pink-color);
-  color: white;
+  color: var(--text-color);
   border-radius: 8px;
 }
 
@@ -111,18 +111,20 @@ body {
 .hero-text {
   flex: 1;
   max-width: 50%;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 .hero-text h1 {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  font-size: var(--font-size-sections);
+  font-family: var(--font-heading);
 }
 
 .hero-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #666;
+  font-size: var(--font-size-paragraph);
+  font-family: var(--font-body);
+  margin-bottom: 60px;
+  color: var(--text-color);
 }
 
 .lumina-one-icon {
@@ -135,27 +137,31 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 10px;
 }
 
 .hero-image {
-  max-width: 100%;
+  width: 110%;
+  max-width: 1400px;
   height: auto;
+  transform: scaleX(-1); /*flipper billedet*/
 }
 
 .cta {
   display: flex;
-  gap: 15px;
+  gap: 48px;
 }
 
 .koebnu {
   padding: 12px 24px;
   background: var(--cta-color);
-  color: white;
+  color: var(--white-color);
   border: none;
   border-radius: 25px;
-  font-size: 14px;
-  font-family: Abel, sans-serif;
+  font-size: var(--font-size-button);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
   cursor: pointer;
 }
 
@@ -163,11 +169,12 @@ body {
 .laesmere {
   padding: 12px 24px;
   background: transparent;
-  color: #333;
-  border: 1px solid #ddd;
+  color: var(--text-color);
+  border: 1px solid var(--cta-color);
   border-radius: 25px;
-  font-size: 14px;
-  font-family: Abel, sans-serif;
+  font-size: var(--font-size-button);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
   cursor: pointer;
 }
 /* Gradiants */
