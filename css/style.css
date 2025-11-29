@@ -1,35 +1,28 @@
-:root {
-  --cta-color: #7c4c5f;
-  --tekst-color: #363636;
-  --white-color: white;
-}
-/* Typografier */
-h1 {
-  font-family: "Abel";
-  font-size: 70px;
-  font-style: normal;
-}
-
-h2 {
-  font-family: Lato;
-  font-size: 60px;
-  font-style: normal;
-}
-
-.normal-text {
-  font-family: Abel;
-  font-size: 22px;
-  font-style: normal;
-}
-
-.bigger-text {
-  font-family: Abel;
-  font-size: 30px;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
+}
+
+:root {
+  /*farver*/
+  --cta-color: #7c4c5f;
+  --text-color: #363636;
+  --white-color: white;
+  --hover-color: #EACBCB;
+  /*typografier*/
+  --font-heading: "Playfair Display", serif;
+  --font-body: "inter", sans-serif;
+  /*typografi størrelser*/
+  --font-size-sections: 70px;
+  --font-size-h1: 56px;
+  --font-size-h2: 40px;
+  --font-size-paragraph: 24px;
+  --font-size-navbar: 20px;
+  --font-size-smallparagraph: 18px;
+  --font-size-button: 30px;
+  /*typografi vægt*/
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
 }
 
 body {
