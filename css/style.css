@@ -222,54 +222,59 @@ body {
   z-index: 3;
 }
 
+
+
+
+
+
+
+
+
+
 /* Produkt */
-.produkt-container {
-  margin-bottom: 100px;
-  margin-top: 40px;
-}
-.headline {
-  font-family: "Lato", sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-.subtext {
-  font-family: "abel", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 40px;
-  max-width: 800px;
-}
-.farve-modeller {
-  text-align: center;
-  margin-top: 40px;
-}
-.farve-modeller img {
-  max-width: 1300px;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.farve-tekster {
+.produkt-section {
+  height: 1024px;                     
+  background: #e7ebe3;               
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1300px;
-  margin: 1.5rem auto 0 auto;
-  font-weight: 300;
-  font-size: 1.3rem;
-  font-family: "abel", sans-serif;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
-.farve-tekster span {
-  flex: 1;
+
+
+.produkt-inner {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
   text-align: center;
 }
+
+
+.headline {
+  font-size: 48px;
+  margin: 0 0 40px 0;
+  color: var(--text-color);
+}
+
+
+.speaker-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Funktioner */
 .funktion-section {
