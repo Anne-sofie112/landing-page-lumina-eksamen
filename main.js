@@ -7,6 +7,7 @@ const speakerVariants = [
     name: "Sage Green",
     price: "1999,-",
     alt: "Højtaler i Sage Green",
+    background: "#e7ebe3",
   },
   {
     className: "purple",
@@ -14,6 +15,7 @@ const speakerVariants = [
     name: "Lavender Mist",
     price: "1999,-",
     alt: "Højtaler i Lavender Mist",
+    background: "#E7E4E9",
   },
   {
     className: "white",
@@ -21,6 +23,7 @@ const speakerVariants = [
     name: "Moonlight White",
     price: "1999,-",
     alt: "Højtaler i Moonlight White",
+    background: "#F5F4F3",
   },
   {
     className: "rose",
@@ -28,5 +31,7 @@ const speakerVariants = [
     name: "Dusty Rose",
     price: "1999,-",
     alt: "Højtaler i Dusty Rose",
+    background: "#F5E9E8",
   },
 ];
+
