@@ -411,6 +411,33 @@ p {
   position: relative;
 }
 
+.room-image {
+  width: 545px;
+  height: 830px;
+  border-radius: 20px;
+}
+
+.design-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.design-headline {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-sections);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.design-description {
+  font-family: var(--font-body);
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+}
+
+
 
 
 
