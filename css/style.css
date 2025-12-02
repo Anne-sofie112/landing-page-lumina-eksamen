@@ -386,7 +386,30 @@ p {
 }
 
 
+/* Design*/
+.design-section {
+  padding: 100px 0;
+  max-height: 1024px;
+}
 
+.design-content {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 0 40px;
+}
+
+.design-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-image-container {
+  position: relative;
+}
 
 
 
