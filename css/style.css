@@ -252,6 +252,11 @@ body {
   cursor: pointer;
 }
 
+.koebnu:hover {
+  background: var(--hover-color);
+  color: var(--text-color);
+}
+
 .tilfoej,
 .laesmere {
   padding: 12px 24px;
@@ -264,12 +269,9 @@ body {
   font-weight: var(--font-weight-regular);
   cursor: pointer;
 }
-/* Gradiants */
-.left-hero-gradiant,
-.right-hero-gradiant,
-.top-hero-gradiant {
-  position: absolute;
-  z-index: 2;
+.tilfoej,
+.laesmere:hover {
+  background: var(--hover-color);
 }
 
 .left-hero-gradiant {

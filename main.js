@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const cartButton = document.getElementById("cartButton");
-const cartModal = document.getElementById("cartModal");
 const cartClose = document.getElementById("cartClose");
 
 if (cartButton && cartClose) {
