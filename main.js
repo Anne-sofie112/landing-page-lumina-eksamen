@@ -35,21 +35,17 @@ const speakerVariants = [
   },
 ];
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const speakerWrapper = document.querySelector(".speaker-wrapper");
   const background = document.querySelector(".product-bg");
   const buttons = document.querySelectorAll(".color-circle");
 
-  
   speakerVariants.forEach((variant) => {
     document.querySelectorAll("." + variant.className).forEach((btn) => {
       btn.addEventListener("click", () => {
-       
         buttons.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
 
-       
         speakerWrapper.innerHTML = `
           <img src="${variant.image}" class="speaker-image" alt="${variant.alt}">
           <div class="speaker-info">
@@ -57,11 +53,27 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>${variant.price}</p>
           </div>
         `;
-         
+
         background.style.background = variant.background;
       });
     });
   });
 });
 
+const cartButton = document.getElementById("cartButton");
+const cartModal = document.getElementById("cartModal");
+const cartClose = document.getElementById("cartClose");
 
+if (cartButton && cartClose) {
+
+  cartButton.addEventListener("click", () => {
+    cartModal.classList.toggle("show");
+  });
+
+
+  cartClose.addEventListener("click", () => {
+    cartModal.classList.remove("show");
+  });
+
+
+}
