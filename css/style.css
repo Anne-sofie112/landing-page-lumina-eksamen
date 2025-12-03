@@ -33,19 +33,15 @@ body {
 }
 
 /* Navigationsbar styling */
+.header {
+  padding: 30px 10px;
+}
+
 .nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent;
-  margin: 0;
-  padding: 8px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  z-index: 1000;
+  position: relative;
 }
 
 .left-nav {
@@ -54,8 +50,8 @@ body {
 }
 
 .nav-icon {
-  width: 48px;
-  height: 38px;
+  width: 58px;
+  height: 48px;
 }
 
 .links {
@@ -63,18 +59,22 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-left: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 24px;
+  z-index: 10;
 }
 
 .links li {
-  margin-left: 10px;
+  margin: 0;
 }
 
 .links a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   padding: 8px 16px;
-  font-family: "Abel";
+  font-family: var(--font-body);
 }
 
 .nav-hover:hover {
@@ -83,14 +83,13 @@ body {
   border-radius: 8px;
 }
 
-
 /* modal card */
 .right-nav {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 15;
 }
-
 
 .cart-button {
   background: transparent;
@@ -98,6 +97,8 @@ body {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  position: relative;
+  z-index: 15;
 }
 
 .cart-button:focus {
@@ -106,16 +107,15 @@ body {
 
 .shopping-bag-icon {
   display: block;
-  width: 32px;
+  width: 24px;
   height: auto;
 }
-
 
 .cart-modal {
   position: absolute;
   top: 60px;
   right: 0;
-  background:#FBF3F3;
+  background: #fbf3f3;
   border-radius: 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); /*fra figma */
   padding: 128px 34px 22.25px 35px; /*fra figma */
@@ -173,9 +173,6 @@ body {
 .cart-close-btn:hover {
   background: var(--hover-color);
 }
-
-
-
 
 /* HERO-section */
 .hero-section {
