@@ -45,7 +45,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: linear-gradient(to bottom, var(--havre-color), transparent);
   z-index: 1000;
 }
 
@@ -79,13 +78,13 @@ body {
 }
 
 .nav-hover:hover {
-  background-color: var(--logo-pink-color);
+  background-color: var(--hover-color);
   color: var(--text-color);
   border-radius: 8px;
 }
 
 
-/* modal cart */
+/* modal card */
 .right-nav {
   position: relative;
   display: flex;
