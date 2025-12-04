@@ -567,9 +567,115 @@ p {
   height: auto;
 }
 
+/* Reviews Section */
+.reviews-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.reviews-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.reviews-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.stars span {
+  font-size: 32px;
+  color: var(--text-color);
+}
+
+.rating-text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color);
+}
+
+.reviews-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--font-size-paragraph);
+  color: var(--text-color);
+  margin-bottom: 60px;
+}
+
+.reviews-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+.arrow {
+  background: var(--cta-color);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background: var(--hover-color);
+  color: var(--text-color);
+}
+
+.review-card {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  max-width: 500px;
+  min-height: 200px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-card.active {
+  display: flex;
+}
+
+.review-stars {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.review-text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-paragraph);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+
+
 /* Footer stuff */
 .footer {
-  background-color: #fff9f3;
+  background-color:#e7ebe3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -591,5 +697,16 @@ p {
 
 .footer-links a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }
+
+
+
+
+
+
+
+
+
+
+

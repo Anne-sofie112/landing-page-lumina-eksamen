@@ -62,17 +62,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const cartButton = document.getElementById("cartButton");
 const cartClose = document.getElementById("cartClose");
+const cartModal = document.getElementById("cartModal");
 
 if (cartButton && cartClose) {
-
   cartButton.addEventListener("click", () => {
     cartModal.classList.toggle("show");
   });
 
-
   cartClose.addEventListener("click", () => {
     cartModal.classList.remove("show");
   });
-
-
 }
