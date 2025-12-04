@@ -35,6 +35,7 @@ const speakerVariants = [
   },
 ];
 
+// produkt farve og tekst skifte
 document.addEventListener("DOMContentLoaded", () => {
   const speakerWrapper = document.querySelector(".speaker-wrapper");
   const background = document.querySelector(".product-bg");
@@ -60,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// kurv 
 const cartButton = document.getElementById("cartButton");
 const cartClose = document.getElementById("cartClose");
 const cartModal = document.getElementById("cartModal");
@@ -73,3 +75,33 @@ if (cartButton && cartClose) {
     cartModal.classList.remove("show");
   });
 }
+
+
+ // anmeldelser 
+ // knap der fører videre til næste anmeldelse
+document.getElementById("nextReview").onclick = function () {
+  if (document.getElementById("review1").classList.contains("active")) {
+    document.getElementById("review1").classList.remove("active");
+    document.getElementById("review2").classList.add("active");
+  } else if (document.getElementById("review2").classList.contains("active")) {
+    document.getElementById("review2").classList.remove("active");
+    document.getElementById("review3").classList.add("active");
+  } else {
+    document.getElementById("review3").classList.remove("active");
+    document.getElementById("review1").classList.add("active");
+  }
+};
+
+// knap der fører tilbage til forrige anmeldelse
+document.getElementById("prevReview").onclick = function () {
+  if (document.getElementById("review1").classList.contains("active")) {
+    document.getElementById("review1").classList.remove("active");
+    document.getElementById("review3").classList.add("active");
+  } else if (document.getElementById("review2").classList.contains("active")) {
+    document.getElementById("review2").classList.remove("active");
+    document.getElementById("review1").classList.add("active");
+  } else {
+    document.getElementById("review3").classList.remove("active");
+    document.getElementById("review2").classList.add("active");
+  }
+};

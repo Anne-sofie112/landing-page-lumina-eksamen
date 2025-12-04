@@ -665,7 +665,6 @@ p {
   font-family: var(--font-body);
   font-size: var(--font-size-paragraph);
   color: var(--text-color);
-  line-height: 1.6;
   margin: 0;
 }
 
