@@ -22,8 +22,8 @@
 - Jeg har tilføjet **JavaScript for første gang i projektet**.
 - Jeg har lavet **farveskift på produktet**, hvor billede, navn, pris og baggrund skifter.
 - Jeg har lavet en **modal til indkøbskurven**, som kan åbnes og lukkes.
-- Jeg har lavet en **anmeldelses-slider**, hvor man kan klikke frem og tilbage mellem anmeldelser.
-- Jeg har brugt **DOM-manipulation** til at ændre indhold og klasser direkte i HTML.
+- Jeg har lavet en **anmeldelses slider**, hvor man kan klikke frem og tilbage mellem anmeldelser.
+- Jeg har brugt **DOM manipulation** til at ændre indhold og klasser direkte i HTML.
 
 ---
 
