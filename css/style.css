@@ -10,7 +10,7 @@
   --hover-color: #eacbcb;
   /*typografier*/
   --font-heading: "Playfair Display", serif;
-  --font-body: "inter", sans-serif;
+  --font-body: "Inter", sans-serif;
   /*typografi størrelser*/
   --font-size-sections: 70px;
   --font-size-h1: 56px;
@@ -27,9 +27,7 @@
 
 body {
   margin: 0;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-top: 80px;
+  padding: 80px 16px 0;
 }
 
 /* Navigationsbar styling */
@@ -270,46 +268,10 @@ body {
   background: var(--hover-color);
 }
 
-.left-hero-gradiant {
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0.02) 15.38%,
-    #d7d7d7 51.92%,
-    #fbf3f3 100%
-  );
-  width: 489px;
-  height: 1024px;
-  left: 0;
-}
-
-.right-hero-gradiant {
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0.02) 0%,
-    #dbdbdb 58.65%,
-    #fffafa 100%
-  );
-  width: 586px;
-  height: 1024px;
-  right: 0;
-}
-
-.top-hero-gradiant {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.02) 0%,
-    rgba(255, 255, 255, 0.91) 51.92%,
-    rgba(255, 255, 255, 0.79) 100%
-  );
-  width: 100%;
-  height: 472px;
-  top: 0;
-  z-index: 3;
-}
 
 /* Produkt*/
 .produkt-section {
-  height: 1024px;
+  min-height: 1024px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -407,7 +369,7 @@ body {
 
 /* Funktioner */
 .funktion-section {
-  height: 472px;
+  min-height: 472px;
   display: flex;
   align-items: center;
 }
@@ -466,7 +428,6 @@ body {
   margin: 0;
 }
 p {
-  white-space: pre-line;
   margin-top: 10px;
 }
 
@@ -589,9 +550,10 @@ p {
 
 .reviews-rating {
   display: flex;
+  font-family: var(--font-heading);
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
   margin-bottom: 10px;
 }
 
@@ -601,9 +563,9 @@ p {
 }
 
 .rating-text {
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-size: var(--font-size-h2);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-regular);
   color: var(--text-color);
 }
 
@@ -668,13 +630,9 @@ p {
   margin: 0;
 }
 
-
-
-
-
 /* Footer stuff */
 .footer {
-  background-color:#e7ebe3;
+  background-color: #e7ebe3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -701,11 +659,85 @@ p {
 
 
 
+/* Responsiv design */
+@media (max-width: 768px) {
+  :root {
+    --font-size-sections: 48px;
+    --font-size-paragraph: 20px;
+  }
+
+  
+  body {
+    margin: 0 20px;
+  }
 
 
+  .nav-bar {
+    flex-wrap: wrap;
+  }
+  .links {
+    position: static;
+    transform: none;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  
+  .hero-section {
+    height: auto;
+    padding: 20px 0;
+  }
+  .hero-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .produkt-section {
+    height: auto;
+  }
+  .speaker-image {
+    width: 90%;
+  }
 
 
+  .funktion-section {
+    height: auto;
+  }
+  .funktion-container {
+    flex-direction: column;
+    gap: 40px;
+  }
 
 
-
-
+  .design-content,
+  .portable-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .room-image { 
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  
+  .reviews-section { 
+    padding: 60px 0; 
+  }
+  .reviews-carousel { 
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .review-card { 
+    padding: 30px 20px;
+    margin: 0 20px;
+  }
+}
