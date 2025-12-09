@@ -11,7 +11,7 @@ const speakerVariants = [
   },
   {
     className: "purple",
-    image: "img/Lilla.png",
+    image: "img/lilla.png",
     name: "Lavender Mist",
     price: "1999,-",
     alt: "Højtaler i Lavender Mist",
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// kurv 
+// kurv
 const cartButton = document.getElementById("cartButton");
 const cartClose = document.getElementById("cartClose");
 const cartModal = document.getElementById("cartModal");
@@ -76,9 +76,8 @@ if (cartButton && cartClose) {
   });
 }
 
-
- // anmeldelser 
- // knap der fører videre til næste anmeldelse
+// anmeldelser
+// knap der fører videre til næste anmeldelse
 document.getElementById("nextReview").onclick = function () {
   if (document.getElementById("review1").classList.contains("active")) {
     document.getElementById("review1").classList.remove("active");
