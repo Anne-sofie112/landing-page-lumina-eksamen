@@ -11,7 +11,7 @@ const speakerVariants = [
   },
   {
     className: "purple",
-    image: "img/lilla.png",
+    image: "img/Lilla.png",
     name: "Lavender Mist",
     price: "1999,-",
     alt: "Højtaler i Lavender Mist",
