@@ -4,17 +4,17 @@
 ---
 
 ## index.html  
-- Strukturen er ryddet op og opdelt i tydelige sektioner (hero, funktioner, produkt, design, portable, anmeldelser og footer).
+- Jeg har ryddet op og skruktureret html(hero, funktioner, produkt, design, portable, anmeldelser og footer).
 - Jeg har brugt **semantiske tags** som `header`, `nav`, `main`, `section` og `footer` for bedre overblik og korrekt HTML-struktur.
-- Indholdet er gjort mere overskueligt og lettere at arbejde videre med.
+- jeg har gjort indholdet mere overskueligt.
 
 ---
 
 ## style.css  
-- Farver, skrifttyper og størrelser er samlet i **CSS-variabler (`:root`)**, så designet er nemt at ændre ét sted.
-- Layoutet er gjort mere fleksibelt med **flexbox**.
-- Der er tilføjet **media queries**, så siden fungerer på forskellige skærmsstørrelser.
-- Generelt er der ryddet op i styling og gjort mere ensartet.
+- Farver, skrifttyper og størrelser har jeg samlet i **CSS-variabler (`:root`)**.
+- Layoutet har jeg gjort mere fleksibelt med **flexbox**.
+- jeg har tilføjet **media queries**, så siden fungerer på forskellige skærmsstørrelser.
+- Generelt har jeg ryddet op i styling og gjort det mere ensartet.
 
 ---
 
