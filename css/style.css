@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 
-.nav-icon {
+.nav-logo {
   width: 58px;
   height: 48px;
 }
@@ -267,7 +267,6 @@ body {
 .laesmere:hover {
   background: var(--hover-color);
 }
-
 
 /* Produkt*/
 .produkt-section {
@@ -657,8 +656,6 @@ p {
   color: var(--text-color);
 }
 
-
-
 /* Responsiv design */
 @media (max-width: 768px) {
   :root {
@@ -666,11 +663,9 @@ p {
     --font-size-paragraph: 20px;
   }
 
-  
   body {
     margin: 0 20px;
   }
-
 
   .nav-bar {
     flex-wrap: wrap;
@@ -684,7 +679,6 @@ p {
     margin-top: 15px;
   }
 
-  
   .hero-section {
     height: auto;
     padding: 20px 0;
@@ -705,7 +699,6 @@ p {
     width: 90%;
   }
 
-
   .funktion-section {
     height: auto;
   }
@@ -714,29 +707,28 @@ p {
     gap: 40px;
   }
 
-
   .design-content,
   .portable-content {
     flex-direction: column;
     gap: 30px;
   }
-  .room-image { 
+  .room-image {
     width: 100%;
     max-width: 350px;
     height: auto;
   }
-  
-  .reviews-section { 
-    padding: 60px 0; 
+
+  .reviews-section {
+    padding: 60px 0;
   }
-  .reviews-carousel { 
+  .reviews-carousel {
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: center;
     position: relative;
   }
-  .review-card { 
+  .review-card {
     padding: 30px 20px;
     margin: 0 20px;
   }
