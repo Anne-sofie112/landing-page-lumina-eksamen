@@ -3,7 +3,7 @@
 const speakerVariants = [
   {
     className: "green",
-    image: "img/grøn.png",
+    image: "img/green.png",
     name: "Sage Green",
     price: "1999,-",
     alt: "Højtaler i Sage Green",
@@ -11,7 +11,7 @@ const speakerVariants = [
   },
   {
     className: "purple",
-    image: "img/lilla.png",
+    image: "img/purple.png",
     name: "Lavender Mist",
     price: "1999,-",
     alt: "Højtaler i Lavender Mist",
@@ -19,7 +19,7 @@ const speakerVariants = [
   },
   {
     className: "white",
-    image: "img/hvid.png",
+    image: "img/white.png",
     name: "Moonlight White",
     price: "1999,-",
     alt: "Højtaler i Moonlight White",
@@ -27,7 +27,7 @@ const speakerVariants = [
   },
   {
     className: "rose",
-    image: "img/lyserød.png",
+    image: "img/pink.png",
     name: "Dusty Rose",
     price: "1999,-",
     alt: "Højtaler i Dusty Rose",
