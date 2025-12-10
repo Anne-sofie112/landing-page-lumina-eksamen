@@ -51,6 +51,11 @@ body {
   width: 58px;
   height: 48px;
   background: white;
+  padding: 8px;
+  border-radius: 6px;
+  max-width: 58px;
+  max-height: 48px;
+  object-fit: contain;
 }
 
 .links {
